@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <form id="registerForm" action="register_submit.php" method="POST">
+        <!-- Role selection as a dropdown -->
+        <select name="role" id="role" required>
+            <option value="">Select Role</option>
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+            <option value="Guest">Guest</option>
+        </select>
+
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email ID" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,112.5,200..1000;1,6..12,112.5,200..1000&display=swap');
+
+:root {
+    --main-color: rgb(51, 231, 225);
+}
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(94, 35, 35);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    background: #040720;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;
+    margin: 20px;
+    padding: 20px;
+}
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: aliceblue;
+}
+button:hover{
+    background-color: aliceblue;
+    color: var(--main-color);
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: aliceblue;
+    /* text-transform: uppercase; */
+    font-size: 3rem;
+}
+
+.heading span{
+    color: var(--main-color);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background: gray;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background: var(--main-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+
+.header .logo span {
+    color: var(--main-color);
+}
+
+.header .navbar {
+    margin-left: auto;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: aliceblue;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-bars {
+    font-size: 3rem;
+    color: aliceblue;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* Full screen height */
+    text-align: center;
+    padding: 50px;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 50rem;
+    /* color: aqua; */
+}
+
+.home .content h3 {
+    color: aliceblue;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .home-slider .swiper-slide {
+    overflow: hidden;
+    border-radius: 2rem;
+    height: 50rem;
+    width: 35rem;
+}
+.home .home-slider .swiper-slide img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+.home .home-slider {
+    margin-top: 2rem; /* Add space between the text/button and the slider */
+    width: 100%; /* Take up full width */
+    max-width: 1000px; /* Limit the max width of the slider */
+}
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #040721;
+  }
+  
+  .home .image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .home .image img {
+    width: 300px; /* Adjust the image size as per your requirement */
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+  }
+  
+  .home .content {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .home .content h3 {
+    font-size: 36px;
+    color: aliceblue;
+    margin-bottom: 10px;
+  }
+  
+  .home .content span {
+    color: #ff6347; /* Adjust the color as needed */
+  }
+  
+  .home .content a.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+
+/* Add styles for the Swiper container and slides */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* for service section */
+.service .box-container .box{
+    background-color: aliceblue;
+}
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.service .box-container .box{
+    border-radius: .4rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 40%;
+    font-size: 3rem;
+    background: var(--main-color);
+    /* color: aliceblue; */
+}
+.service .box-container .box h3{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+.service .box-container .box p{
+    line-height: 2;
+}
+
+/* about section */
+.about {
+    padding: 4rem 0;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .image {
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+.about .row .image img {
+    width: 100%; /* Make the image take up 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 1rem; /* Add some rounding to the image corners */
+    display: block;
+    margin: 0 auto;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+}
+.about .row .content h3{
+    font-size: 4rem;
+    color: aliceblue;
+}
+.about .row .content p{
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* Pricing */
+/* .price{
+    background-color: aliceblue;
+} */
+.price {
+    background-color: #040720; /* Set the background for the whole section */
+    padding: 4rem 5%;; /* Add padding for spacing */
+}
+
+.price .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 1.5rem;
+}
+
+.price .box-container .box {
+    padding: 2rem 0;
+    background: #1b1e32; /* Dark background for individual pricing boxes */
+    border-radius: .3rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out; /* Add smooth transition for hover effect */
+}
+
+.price .box-container .box:hover {
+    transform: scale(1.03); /* Slight scale-up on hover */
+}
+
+.price .box-container .box .title {
+    background: var(--main-color); /* Use your defined main color for the title */
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .price {
+    color: aliceblue; /* Text color for the price */
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.price .box-container .box ul {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li {
+    font-size: 2rem;
+    color: antiquewhite; /* Text color for list items */
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li i {
+    color: var(--main-color); /* Icon color */
+    padding-right: 2rem;
+}
+
+.price .box-container .box .btn {
+    background-color: gray; 
+    color: white; 
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.price .box-container .box .btn:hover {
+    background-color: var(--main-color); 
+    color: black; 
+}
+
+/* Reviews */
+/* Review Section */
+.review {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.review .swiper-container {
+    padding-bottom: 2rem;
+}
+
+.review .swiper-slide {
+    background-color: #1b1e32;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 40rem; /* Set max width for the review boxes */
+}
+
+.review .swiper-slide .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review .swiper-slide .user img {
+    width: 8rem; /* Adjust the size of the review images */
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure images are cropped properly */
+    border: 2px solid var(--main-color); /* Add a border to the image */
+}
+
+.review .swiper-slide .user-info {
+    text-align: left;
+    color: aliceblue;
+}
+
+.review .swiper-slide .user-info h3 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.review .swiper-slide .user-info span {
+    font-size: 1.4rem;
+    /* color: aliceblue; */
+}
+
+.review .swiper-slide p {
+    font-size: 1.6rem;
+    color: aliceblue;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+.review .checked {
+    color: orange;
+  }
+
+/* Contact Form */
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #040720;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1c1f3b;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact h1.heading {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact form .inputBox {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact form .inputBox input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #2a2e4b;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.contact form .inputBox input:focus {
+    border-color: var(--main-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #2a2e4b;
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    resize: none;
+}
+
+/* .contact form textarea:focus {
+    border-color: var(--main-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--main-color);
+} */
+
+.contact form .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact form .btn:hover {
+    background-color: aliceblue;
+    background: lightskyblue;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #040721;
+}
+.footer-text {
+    margin: 0;
+    font-size: 14px; 
+  }
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: aliceblue;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: aliceblue;
+}
+.footer .box-container .box a i{
+    color: var(--main-color);
+}
+.footer .box-container .box a:hover i{
+    font-size: 1.2rem;
+    color: aliceblue
+}
+.footer .copy{
+    text-align: center;
+    border-top: 1px solid var(--main-color);
+    color: aliceblue;
+    font-size: .8rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    /* display: flex; */
+}
+/* media queries */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width:789px) {
+    #menu-bars {
+        display: inline;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid black;
+        background: blue;
+        clip-path: polygon(0, 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar .active {
+        clip-path: polygon(0, 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar a {
+        display: flex;
+        background: purple;
+        border-radius: 5rem;
+        padding: 2rem;
+        margin: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .home .content h3{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 27rem;
+    }
+}
